@@ -20,6 +20,8 @@ import {
   Right,
   Title,
 } from 'native-base';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
+import styles from './styles';
 
 export default class Home extends Component {
   constructor(props) {
@@ -45,20 +47,18 @@ export default class Home extends Component {
       },
       header: (
         <Header searchBar rounded>        
-          <Button transparent>
-            <Icon name="menu" />
+          <Button style={styles.headerButton}>
+            <Title>Home</Title>                    
+          </Button>  
+          <Button style={styles.headerButton}>
+            <Title style={styles.buttonText}>Send</Title>
           </Button>
-        
-          <Item>
-            <Input placeholder="Buscar..." />
-            <Icon name="people" />
-          </Item>
-          
-          <Button transparent>
-            <Icon name="funnel"></Icon>
-          </Button>
-          
-
+          <Button style={styles.headerButton}>
+            <Title>Withdraw</Title>
+          </Button>        
+          <Button style={styles.headerButton}>
+            <Title>Account</Title>
+          </Button>     
         </Header>
       ),
 

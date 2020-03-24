@@ -102,15 +102,34 @@ export default StyleSheet.create({
     shadowOpacity: 0.8,
   },
 
+  headerButton: {
+    width: 100,
+    borderColor: '#42B0C9',
+    borderWidth: 1,
+    height: 50,
+    padding: 10,
+    borderRadius: 24,
+    marginTop: 20,
+    backgroundColor: '#42B0C9',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#42B0C9',
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowRadius: 5,
+    shadowOpacity: 0.8,
+  },
+
   buttonText: {
     height: 50,
     width: 230,
     color: 'white',
-    fontSize: 18,
-    fontWeight: 'bold',
-    width: '100%',
-    height: '100%',
+    fontSize: 14,
     textAlign: 'center',
+    textAlignVertical: 'center'
   },
   emailContainer: {
     width: 325,
